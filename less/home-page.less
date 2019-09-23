@@ -39,6 +39,9 @@
             font-weight: 700;
             font-style: normal;
             margin-top: 30px;
+            @media @phone{
+                text-align: center;
+            }
 
         }
         h2{
@@ -46,16 +49,30 @@
             font-size: 1.8rem;
             line-height: 3.2rem;
             margin: 10px 0;
+            @media @phone{
+                text-align: center;
+            }
         }
         .ctas .cta{
             margin: 20px 20px 0 0;
+            @media @phone{
+                display: block;
+                text-align: center;
+            }
         }
         .text{
             margin-left: 50px;
+            @media @phone{
+                margin-left: 0;
+            }
+            
         }
     }
     .phone-wrapper{
         position: relative;
+        @media @phone{
+            display: none;
+        }
         img{
             position: absolute;
             top: 50%;
@@ -98,8 +115,14 @@
 
     .features-group{
         display: flex;
+        // flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 30px;
+        @media @phone{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
         p{
             line-height: 28px;
         }
@@ -111,7 +134,10 @@
             background: #d9eeff;
             text-align: center;
             // margin: 20px 20px 20px 0px;
-
+            @media @phone{
+                width: 90%;;
+                margin: 20px 0;
+            }
             .card-title{
                 font-size: 1.8rem;
                 text-align: center;
@@ -124,9 +150,7 @@
                 border-radius: 10px;
                 overflow: hidden;
             }
-            .card-content{
-                // text-align: left;
-            }
+            
 
         }
     }

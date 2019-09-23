@@ -178,7 +178,9 @@ p {
   color: white;
   text-decoration: none;
   font-size: 1.4rem;
+  font-weight: 700;
   border-radius: 5px;
+  letter-spacing: 0.5px;
 }
 .primary-cta {
   background: #fb8570;
@@ -227,20 +229,46 @@ p {
   font-style: normal;
   margin-top: 30px;
 }
+@media (max-width: 500px) {
+  .home-header .header-info h1 {
+    text-align: center;
+  }
+}
 .home-header .header-info h2 {
   color: white;
   font-size: 1.8rem;
   line-height: 3.2rem;
   margin: 10px 0;
 }
+@media (max-width: 500px) {
+  .home-header .header-info h2 {
+    text-align: center;
+  }
+}
 .home-header .header-info .ctas .cta {
   margin: 20px 20px 0 0;
+}
+@media (max-width: 500px) {
+  .home-header .header-info .ctas .cta {
+    display: block;
+    text-align: center;
+  }
 }
 .home-header .header-info .text {
   margin-left: 50px;
 }
+@media (max-width: 500px) {
+  .home-header .header-info .text {
+    margin-left: 0;
+  }
+}
 .home-header .phone-wrapper {
   position: relative;
+}
+@media (max-width: 500px) {
+  .home-header .phone-wrapper {
+    display: none;
+  }
 }
 .home-header .phone-wrapper img {
   position: absolute;
@@ -279,6 +307,13 @@ p {
   justify-content: space-between;
   margin-top: 30px;
 }
+@media (max-width: 500px) {
+  .features .features-group {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .features .features-group p {
   line-height: 28px;
 }
@@ -289,6 +324,12 @@ p {
   border-radius: 15px;
   background: #d9eeff;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .features .features-group .feature-card {
+    width: 90%;
+    margin: 20px 0;
+  }
 }
 .features .features-group .feature-card .card-title {
   font-size: 1.8rem;
