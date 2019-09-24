@@ -203,12 +203,21 @@ p {
   align-items: center;
   max-width: 1200px;
 }
+@media (max-width: 500px) {
+  .home-header nav {
+    flex-direction: column;
+  }
+}
 .home-header nav .logo {
-  margin-left: 50px;
   font-size: 2.4rem;
   color: white;
   font-weight: 700;
   font-style: normal;
+}
+@media (max-width: 500px) {
+  .home-header nav .logo {
+    margin-top: 20px;
+  }
 }
 .home-header nav .nav-links a {
   font-size: 1.8rem;
@@ -217,10 +226,22 @@ p {
   color: #363636;
   margin: 0 40px 0 40px;
 }
+@media (max-width: 500px) {
+  .home-header nav .nav-links a {
+    margin: 0 30px;
+    background: white;
+  }
+}
 .home-header .header-info {
   display: flex;
   justify-content: space-between;
   margin: 40px auto;
+}
+@media (max-width: 500px) {
+  .home-header .header-info {
+    width: 90%;
+    margin: 30px auto;
+  }
 }
 .home-header .header-info h1 {
   color: white;
@@ -261,6 +282,9 @@ p {
   .home-header .header-info .text {
     margin-left: 0;
   }
+  .home-header .header-info .text br {
+    display: none;
+  }
 }
 .home-header .phone-wrapper {
   position: relative;
@@ -281,6 +305,12 @@ p {
 }
 .story {
   margin-top: 70px;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .story {
+    margin-top: 20px;
+  }
 }
 .story h2 {
   font-size: 1.8rem;
@@ -295,6 +325,7 @@ p {
   margin-top: 10px;
 }
 .features {
+  padding: 20px;
   height: 500px;
   margin-top: 70px;
 }
@@ -318,7 +349,7 @@ p {
   line-height: 28px;
 }
 .features .features-group .feature-card {
-  width: 270px;
+  width: 23%;
   height: 370px;
   padding: 20px;
   border-radius: 15px;
@@ -341,4 +372,9 @@ p {
   margin: 10px 0;
   border-radius: 10px;
   overflow: hidden;
+}
+@media (max-width: 500px) {
+  .features .features-group .feature-card .card-img {
+    margin-top: 20px;
+  }
 }
