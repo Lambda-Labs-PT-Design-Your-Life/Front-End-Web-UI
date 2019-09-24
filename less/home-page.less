@@ -3,8 +3,9 @@
 .container-home {
   display: flex;
   flex-flow: row wrap;
-margin-top: 100px;
-
+  justify-self: center;
+  width: 1100px;
+  margin-top: 80px;
 
   @media @phone {
     width: 500px;
@@ -13,8 +14,9 @@ margin-top: 100px;
   }
 
   header {
-    width: 100%;
-    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
     h2 {
       padding: 15px;
     }
@@ -27,14 +29,26 @@ margin-top: 100px;
       margin-bottom: 3%;
 
       @media @phone {
-        height: 100px;
+        height: 1000px;
         width: 500px;
       }
     }
 
-  nav {
+    nav {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
 
-  }
+      ul {
+        display: flex;
+        justify-items: space-between;
+
+        li {}
+
+      }
+    }
+    .header-home {
+    }
   }
 
   @media @phone {
@@ -66,10 +80,6 @@ margin-top: 100px;
   p {
     margin-top: 13px;
   }
-}
-
-@media @phone {
-  flex-flow: column nowrap;
 }
 
 @media @phone {
