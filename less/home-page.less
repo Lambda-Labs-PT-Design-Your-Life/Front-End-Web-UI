@@ -1,8 +1,8 @@
 .home-header{
-    background: url('/assets/header-bg.svg') no-repeat;
+    background: #00a0ba;
     background-size: cover;
     height: 500px;
-
+   
     nav{
         height: 100px;
         width: 100%;
@@ -10,8 +10,10 @@
         justify-content: space-between;
         align-items: center;
         max-width: @max-width;
+        padding: 20px;
         @media @phone{
             flex-direction: column;
+            padding: 20px 0;
         }
 
         .logo{
@@ -19,20 +21,21 @@
             color: white;
             font-weight: 700;
             font-style: normal;
-            @media @phone{
-                margin-top: 20px;
-            }
-        }
     
+        }
+        .nav-links{
+            display: flex;
+        }
         .nav-links a{
             font-size: 1.8rem;
             font-weight: bold;
             text-decoration: none;
-            color: #363636;
+            color: white;
             margin: 0 40px 0 40px;
             @media @phone{
                 margin: 0 30px;
-                background: white;
+                display: inline-block;
+                color: white;
                 
             }
         }
@@ -90,11 +93,14 @@
         @media @phone{
             display: none;
         }
+        @media @tablet{
+            display: none;
+        }
         img{
             position: absolute;
             top: 50%;
             right: 50%;
-            transform: translate(-115%, -20%);
+            transform: translate(-115%, -19%);
             width: 200px;
             animation: fadeIn 1250ms linear;
             animation-timing-function: ease-in-out;

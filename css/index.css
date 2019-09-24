@@ -191,7 +191,7 @@ p {
   border: solid 2px;
 }
 .home-header {
-  background: url('/assets/header-bg.svg') no-repeat;
+  background: #00a0ba;
   background-size: cover;
   height: 500px;
 }
@@ -202,10 +202,12 @@ p {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
+  padding: 20px;
 }
 @media (max-width: 500px) {
   .home-header nav {
     flex-direction: column;
+    padding: 20px 0;
   }
 }
 .home-header nav .logo {
@@ -214,22 +216,21 @@ p {
   font-weight: 700;
   font-style: normal;
 }
-@media (max-width: 500px) {
-  .home-header nav .logo {
-    margin-top: 20px;
-  }
+.home-header nav .nav-links {
+  display: flex;
 }
 .home-header nav .nav-links a {
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
-  color: #363636;
+  color: white;
   margin: 0 40px 0 40px;
 }
 @media (max-width: 500px) {
   .home-header nav .nav-links a {
     margin: 0 30px;
-    background: white;
+    display: inline-block;
+    color: white;
   }
 }
 .home-header .header-info {
@@ -294,11 +295,16 @@ p {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .home-header .phone-wrapper {
+    display: none;
+  }
+}
 .home-header .phone-wrapper img {
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(-115%, -20%);
+  transform: translate(-115%, -19%);
   width: 200px;
   animation: fadeIn 1250ms linear;
   animation-timing-function: ease-in-out;
