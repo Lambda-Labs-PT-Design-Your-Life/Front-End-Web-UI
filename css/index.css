@@ -179,6 +179,12 @@ p {
 .secondary-cta {
   color: white;
   border: solid 2px;
+  transition: 10000ms;
+}
+.secondary-cta:hover {
+  background: #fb8570;
+  color: white;
+  border: #fb8570;
 }
 @keyframes fadeIn {
   from {
