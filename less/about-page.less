@@ -1,16 +1,78 @@
 .about-header{
     background: @main-color;
-    height: 100px;
+    height: 150px;
+    padding: 20px;
     nav{
+        height: 100px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        color: white;
+        align-items: center;
+        max-width: @max-width;
+        padding: 20px;
+        @media @phone{
+            flex-direction: column;
+            padding: 20px 0;
+        }
 
         .logo{
-            color: white;   
             font-size: 2.4rem;
+            color: white;
             font-weight: 700;
+            font-style: normal;
+    
+        }
+        .nav-links{
+            display: flex;
+        }
+        .nav-links a{
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            margin: 0 40px 0 40px;
+            @media @phone{
+                margin: 0 30px;
+                display: inline-block;
+                color: white;
+                
+            }
+        }
+    }
+}
+
+.meet-the-team{
+    padding: 20px;
+    text-align: center;
+
+    h1{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .desc{
+        margin: 20px 0;
+        font-size: 1.8rem;
+        line-height: 28px;
+    }
+    .team-group{
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        .card{
+            width: 23%;
+            height: 370px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #d9eeff;
+            text-align: center;
+        }
+        .card .img img{
+            border-radius: 200px;
+        }
+        .name{
+            font-size: 1.8rem;
+            margin: 10px 0;
         }
     }
 }
