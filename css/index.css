@@ -399,6 +399,21 @@ p {
     width: 200px;
   }
 }
+.about-header {
+  background: #00a0ba;
+  height: 100px;
+}
+.about-header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.about-header nav .logo {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
 footer {
   height: 250px;
   background: #00a0ba;
