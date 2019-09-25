@@ -459,20 +459,52 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .meet-the-team .team-group {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1000px) {
+  .meet-the-team .team-group {
+    flex-direction: column;
+  }
+}
 .meet-the-team .team-group .card {
   width: 23%;
-  height: 370px;
   padding: 20px;
   border-radius: 15px;
   background: #d9eeff;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .meet-the-team .team-group .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 1000px) {
+  .meet-the-team .team-group .card {
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0;
+  }
+}
 .meet-the-team .team-group .card .img img {
   border-radius: 200px;
+  width: 80%;
 }
 .meet-the-team .team-group .name {
   font-size: 1.8rem;
   margin: 10px 0;
+}
+.meet-the-team .team-group .role {
+  font-size: 1.4rem;
+  padding: 5px;
+  background: #00bc98;
+  color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: inline-block;
 }
 footer {
   height: 250px;
