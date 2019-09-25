@@ -506,6 +506,12 @@ p {
   margin: 0 auto;
   display: inline-block;
 }
+.meet-the-team .team-group .social {
+  margin: 10px 0;
+}
+.meet-the-team .team-group .social img {
+  width: 32px;
+}
 footer {
   height: 250px;
   background: #00a0ba;
