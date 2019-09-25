@@ -175,11 +175,17 @@ p {
 .primary-cta {
   background: #fb8570;
   border: solid 2px #fb8570;
+  transition: 1s;
+}
+.primary-cta:hover {
+  background: none;
+  border: solid 2px #fb8570;
+  color: #fb8570;
 }
 .secondary-cta {
   color: white;
   border: solid 2px;
-  transition: 10000ms;
+  transition: 1s;
 }
 .secondary-cta:hover {
   background: #fb8570;
