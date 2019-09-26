@@ -464,6 +464,8 @@ p {
   margin: 20px 0;
   font-size: 1.8rem;
   line-height: 28px;
+  width: 46%;
+  margin: 20px auto;
 }
 .meet-the-team .team-group {
   margin: 20px 0;
