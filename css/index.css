@@ -178,9 +178,9 @@ p {
   transition: 1s;
 }
 .primary-cta:hover {
-  background: none;
-  border: solid 2px #fb8570;
-  color: #fb8570;
+  background: white;
+  border: white 2px solid;
+  color: #363636;
 }
 .secondary-cta {
   color: white;
@@ -190,7 +190,7 @@ p {
 .secondary-cta:hover {
   background: #fb8570;
   color: white;
-  border: #fb8570;
+  border: #fb8570 2px solid;
 }
 @keyframes fadeIn {
   from {
@@ -370,6 +370,7 @@ p {
   line-height: 28px;
 }
 .features .features-group .feature-card {
+  padding: 20px;
   width: 40%;
   height: 380px;
   text-align: center;
