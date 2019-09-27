@@ -1,9 +1,9 @@
-@media (max-width: 500px) {
+@media '(max-width: 500px)' {
   set {
     flex-direction: column;
   }
 }
-@media (max-width:  750px) {
+@media "(max-width:  750px)" {
   set {
     flex-direction: column;
   }
@@ -187,12 +187,17 @@ header nav ul li a h2:hover {
 }
 .wrapper-home {
   width: 95%;
-  height: auto;
+  height: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+.wrapper-home .main-content-home {
+  display: flex;
+  flex-flow: row wrap;
+  background-image: url("../img/wall-background.png");
 }
 footer {
   display: flex;
