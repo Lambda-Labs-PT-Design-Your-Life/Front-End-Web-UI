@@ -15,8 +15,18 @@
 
 // Mobile var
 
-@phone: ~"@media max-width: 500px";
+@mobile: ~'(max-width: 500px)';
+@media @mobile {
+    set {
+        flex-direction: column;
+    }
+}
 
 // Tablet var
 
-@tablet: ~"@media max-width:  800px";
+@tablet: ~"(max-width:  750px)";
+@media @tablet {
+    set {
+        flex-direction: column;
+    }
+}
