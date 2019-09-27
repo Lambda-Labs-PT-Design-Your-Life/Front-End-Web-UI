@@ -167,8 +167,9 @@ p {
   align-items: center;
   width: 100%;
   margin: auto;
-  background: lightblue;
+  background: whitesmoke;
   border-bottom: 1px solid #dee2e6;
+  margin-bottom: 10px;
 }
 .navarea .navhead {
   width: 100%;
