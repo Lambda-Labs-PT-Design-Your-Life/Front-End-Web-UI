@@ -1,3 +1,193 @@
+brian-taveras2
+.home-header{
+    background: @main-color;
+    background-size: cover;
+    height: 500px;
+   
+    nav{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: @max-width;
+        padding: 20px;
+        @media @phone{
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+        .logo a{
+            font-size: 2.4rem;
+            color: white;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+        }
+        .nav-links{
+            display: flex;
+        }
+        .nav-links a{
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            margin: 0 40px 0 40px;
+            @media @phone{
+                margin: 0 30px;
+                display: inline-block;
+                color: white;
+                
+            }
+        }
+    }
+
+    .header-info{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px auto;
+        @media @phone{
+            width: 90%;
+            margin: 30px auto;
+        }
+        
+        h1{
+            color: white;
+            font-size: 2.4rem;
+            font-weight: 700;
+            font-style: normal;
+            // margin-top: 30px;
+            @media @phone{
+                text-align: center;
+            }
+
+        }
+        h2{
+            color: white;
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            margin: 10px 0;
+            @media @phone{
+                text-align: center;
+            }
+        }
+        .ctas .cta{
+            margin: 20px 20px 0 0;
+            @media @phone{
+                display: block;
+                text-align: center;
+            }
+        }
+        .text{
+            padding: 20px;
+            @media @phone{
+                br{
+                    display: none;
+                }
+            }
+            
+        }
+    }
+    .phone-wrapper{
+        position: relative;
+        @media @phone{
+            display: none;
+        }
+        @media @tablet{
+            display: none;
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(-60%, -19%);
+            width: 250px;
+            animation: fadeIn 1250ms linear;
+            animation-timing-function: ease-in-out;
+            
+
+        }
+    }
+}
+
+.story{
+    margin-top: 70px;
+    padding: 20px;
+    @media @phone{
+        margin-top: 20px;
+    }
+    h2{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    h1{
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+    p{
+        line-height: 32px;
+        margin-top: 10px;
+    }
+}
+
+.features{
+    padding: 20px;
+    margin-top: 70px;
+    h2{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    
+
+    .features-group{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        background: #d9eeff;
+        border-radius: 20px;
+        @media @phone{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        @media @tablet{
+            flex-direction: column;
+        }
+        p{
+            line-height: 28px;
+        }
+        .feature-card{
+            padding: 20px;
+            width: 40%;
+            height: 380px;
+            text-align: center;
+            @media @phone{
+                width: 90%;;
+                margin: 20px 0;
+            }
+            @media @tablet{
+                width: 100%;
+                margin: 10px 0;
+            }
+            .card-title{
+                font-size: 1.8rem;
+                text-align: center;
+                font-weight: 700;
+            }
+            .card-img{
+                width: 200px;
+                margin: 10px 0;
+                border-radius: 10px;
+                overflow: hidden;
+                @media @phone{
+                    margin-top: 20px;
+                }
+                @media @tablet{
+                    width: 200px;
+                }
+            }
+=======
 .home {
     .mainheader {
         width: 100%;
@@ -92,6 +282,7 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
+Dev-Brian
         }
     }
 }
