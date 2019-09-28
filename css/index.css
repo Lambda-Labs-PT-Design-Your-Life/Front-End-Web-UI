@@ -1,13 +1,3 @@
-@media '(max-width: 500px)' {
-  set {
-    flex-direction: column;
-  }
-}
-@media "(max-width:  750px)" {
-  set {
-    flex-direction: column;
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -202,11 +192,64 @@ header nav ul li a h2:hover {
   flex-flow: row nowrap;
   background-image: url("../img/wall-background.png");
   background-size: 1000px 900px;
+  align-items: center;
 }
 .wrapper-home .main-content-home .app-info-home {
-  margin-bottom: 30%;
-  padding: 10%;
-  border: 2px solid black;
+  margin: 5%;
+  padding: 6%;
+  border: 4px solid #ffdb70;
+  border-radius: 5px;
+  height: 40%;
+  width: 50%;
+  background-color: #fb8570;
+  text-align: center;
+}
+.wrapper-home .main-content-home .app-info-home #app-btn {
+  padding: 4%;
+  margin: 0% 6% 35% 6%;
+}
+.wrapper-home .main-content-home .app-info-home #app-btn a {
+  text-decoration: none;
+  font-family: "Proxima Nova", sans-serif;
+}
+.wrapper-home .main-content-home .team-home {
+  margin: 5%;
+  padding: 6%;
+  border: 4px solid #ffdb70;
+  border-radius: 5px;
+  height: 40%;
+  width: 50%;
+  background-color: #fb8570;
+  text-align: center;
+}
+.wrapper-home .main-content-home .team-home #team-btn {
+  padding: 4%;
+  margin: 0% 6% 35% 6%;
+}
+.wrapper-home .main-content-home .team-home #team-btn a {
+  text-decoration: none;
+  font-family: "Proxima Nova", sans-serif;
+}
+.wrapper-home .main-content-home .course-info-home {
+  margin: 5%;
+  padding: 6%;
+  border: 4px solid #ffdb70;
+  border-radius: 5px;
+  height: 40%;
+  width: 50%;
+  background-color: #fb8570;
+  text-align: center;
+}
+.wrapper-home .main-content-home .course-info-home #course-btn {
+  padding: 5%;
+  margin: 0% 6% 35% 6%;
+}
+.wrapper-home .main-content-home .course-info-home #course-btn a {
+  text-decoration: none;
+  font-family: 'Proxima Nova', sans-serif;
+}
+.wrapper-home .bottom-content-home {
+  margin-top: 4%;
 }
 .wrapper-about {
   width: 95%;
