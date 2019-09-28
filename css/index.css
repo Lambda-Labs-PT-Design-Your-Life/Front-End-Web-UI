@@ -2,7 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+ brian-taveras2
 @import url("https://use.typekit.net/hwf0dil.css");
+=======
+ Dev-Brian
 html,
 body,
 div,
@@ -135,9 +138,14 @@ html {
 }
 html,
 body {
+brian-taveras2
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
+=======
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+Dev-Brian
 }
 h1,
 h2,
@@ -145,7 +153,11 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+brian-taveras2
   color: #363636;
+=======
+  color: #23293B;
+Dev-Brian
 }
 h2 {
   font-size: 3.2rem;
@@ -158,6 +170,7 @@ p {
   line-height: 1.4;
 }
 .container {
+brian-taveras2
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -217,7 +230,6 @@ p {
   padding: 20px;
 }
 @media (max-width: 500px) {
-  .home-header nav {
     flex-direction: column;
     padding: 20px 0;
   }
@@ -547,4 +559,136 @@ footer nav a {
 footer .copyright {
   text-align: center;
   color: white;
+=======
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navarea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  background: lightblue;
+  border-bottom: 1px solid #dee2e6;
+}
+.navarea .navhead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #454A59;
+}
+.navarea .navhead h1 {
+  font-size: 4em;
+  padding-top: 10px;
+}
+.navarea .navhead a {
+  text-decoration: none;
+}
+.navarea nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.navarea nav a {
+  font-size: 1.6em;
+  display: flex;
+  padding: 14px;
+  text-decoration: none;
+  color: #454A59;
+}
+footer {
+  margin-top: 40px;
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .mainheader {
+  width: 100%;
+  height: 30rem;
+}
+.activity-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 40px;
+}
+@media ( max-width: 500px ) {
+  .activity-images {
+    width: 100%;
+  }
+  .activity-images .sports {
+    display: none;
+  }
+  .activity-images .runner {
+    display: none;
+  }
+  .activity-images .activity {
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+.activity-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.visit-planets {
+  padding: 15px;
+}
+.visit-planets h3 {
+  margin-top: 11px;
+}
+.visit-planets p {
+  margin-top: 13px;
+}
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.walk .walk-text {
+  width: 50%;
+}
+.walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.walk .walk-text p {
+  margin-bottom: 26px;
+}
+.walk .walk-text .btn {
+  width: 30%;
+  height: 12%;
+  background-color: #22283A;
+  border-radius: 7px;
+  font-size: 1.7em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+Dev-Brian
 }
