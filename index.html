@@ -8,32 +8,76 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
 </head>
 
 <body>
+    <script src="js/script.js"></script>
 
     <div>
         <div class="navarea">
             <a class="navhead" href="#">
-                <h1>Design Your Life</h1>
+                <h1>Rays Notes: A Life Management Tool</h1>
+
             </a>
 
             <nav>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="/about.html">About Rays Notes</a>
                 <a href="#">Sign In</a>
+                <a href="#">Journal</a>
+                <a href="#">Reading Log</a>
+                <a href="#">Contact</a>
             </nav>
         </div>
         <div class="container home">
 
+            <!-- carasoul  -->
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="/img/healthyeating.jpeg" style="width:100%">
+                    <div class="text">Healthy Eating</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="/img/design.jpeg" style="width:100%">
+                    <div class="text">Design Your Life</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="/img/healthyliving.jpeg" style="width:100%">
+                    <div class="text">Healthy Living</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+
+
+
             <header class="intro">
                 <!-- image code here -->
-                <img class="mainheader" src="/img/design.jpeg" alt="main picture" />
+                <!-- <img class="mainheader" src="/img/design.jpeg" alt="main picture" /> -->
                 <h2>Design Your Life</h2>
 
-                <p>his app helps you figure out which activities bring you enjoyment, energy, and engagement. These
+                <p>This app helps you figure out which activities bring you enjoyment, energy, and engagement. These
                     clues are the first step you need to take to design your ideal life. The journal includes an
                     activity log and a reflection log. Activity logs record daily your main activities, and a gauge to
                     show how engaged and energized you were. Reflection logs are done once a week to record your trends,
@@ -42,18 +86,18 @@
             </header>
 
             <section class="activity-images">
-                <img src="img/journal.jpeg" class="activity" alt="journal">
-                <img src="img/activities.jpeg" class="sports" alt="sports">
+                <img src="img/meditation.jpeg" class="activity" alt="meditation">
+                <img src="img/volleyball.jpeg" class="sports" alt="sports">
                 <img src="img/reading.jpeg" class="runner" alt="runner">
             </section>
-            <section class="visit-planets">
+            <!-- <section class="visit-planets">
 
                 <h3>Live your best life?</h3>
 
                 <p>Never in all their history have we had so many tools to live our best lives.</p>
 
                 <p>We hope to organize the tools to help you live your best life.</p>
-            </section>
+            </section> -->
 
             <section class="walk">
                 <div class="walk-text">
@@ -69,7 +113,7 @@
                 </div>
 
                 <div class="walk-img">
-                    <img src="img/runner.jpeg" alt="Space walking astronaut">
+                    <img src="img/runner.jpeg" alt="runner">
                 </div>
 
             </section>
@@ -77,9 +121,11 @@
 
 
             <footer>
-                <p>Copyright Design Your Life! 2019</p>
+                <p>Copyright Rays Notes! 2019</p>
             </footer>
-
+            <script>
+                window.onload = currentSlide(1);
+            </script>
         </div>
     </div>
 
