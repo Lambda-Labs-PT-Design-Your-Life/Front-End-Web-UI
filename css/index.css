@@ -192,12 +192,21 @@ header nav ul li a h2:hover {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  align-content: flex-start;
   margin: 0 auto;
+  background-color: #98f7e5;
 }
 .wrapper-home .main-content-home {
+  height: 75%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   background-image: url("../img/wall-background.png");
+  background-size: 1000px 900px;
+}
+.wrapper-home .main-content-home .app-info-home {
+  margin-bottom: 30%;
+  padding: 10%;
+  border: 2px solid black;
 }
 footer {
   display: flex;

@@ -6,11 +6,21 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  align-content: flex-start;
   margin: 0 auto;
+  background-color: @main-alt-color;
 
   .main-content-home {
+    height: 75%;
     display: flex;
-    flex-flow: row wrap;
-   background-image: url("../img/wall-background.png");
+    flex-flow: row nowrap;
+    background-image: url("../img/wall-background.png");
+    background-size: 1000px 900px;
+
+    .app-info-home {
+      margin-bottom: 30%;
+      padding: 10%;
+      border: 2px solid black;
+    }
   }
-  }
+}
