@@ -94,7 +94,8 @@ video {
 html,
 body {
   height: 1000px;
-  width: 1300px;
+  width: 2000px;
+  margin: 0 auto;
 }
 /* HTML5 display-role reset for older browsers */
 article,
