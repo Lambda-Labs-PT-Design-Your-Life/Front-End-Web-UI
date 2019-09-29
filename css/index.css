@@ -238,7 +238,7 @@ header nav ul li a h2:hover {
   color: white;
 }
 .wrapper-home {
-  width: 95%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: row;
