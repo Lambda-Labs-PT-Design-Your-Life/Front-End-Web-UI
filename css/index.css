@@ -233,7 +233,7 @@ header nav ul li a h2:hover {
   color: white;
 }
 .wrapper-home {
-  width: 100%;
+  width: 95%;
   height: 1200px;
   display: flex;
   flex-direction: row;
@@ -266,19 +266,20 @@ header nav ul li a h2:hover {
   background-color: #fb8570;
   text-align: center;
 }
-.wrapper-home .main-content-home .app-info-home #app-btn {
-  display: inline-block;
+.wrapper-home .main-content-home .app-info-home .button {
+  border-radius: 4px;
   border: none;
   background-color: black;
   color: #98f7e5;
-  padding: 15%;
-  margin: 0% 6% 35% 6%;
+  padding: 20px;
+  margin: 5px;
+  width: 200px;
   text-align: center;
   font-size: 20px;
   transition: all 0.5s;
   cursor: pointer;
 }
-.wrapper-home .main-content-home .app-info-home #app-btn a {
+.wrapper-home .main-content-home .app-info-home .button .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -286,7 +287,7 @@ header nav ul li a h2:hover {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
-.wrapper-home .main-content-home .app-info-home #app-btn a:after {
+.wrapper-home .main-content-home .app-info-home .button a:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -294,10 +295,10 @@ header nav ul li a h2:hover {
   right: -20px;
   transition: 0.5s;
 }
-.wrapper-home .main-content-home .app-info-home #app-btn :hover a {
+.wrapper-home .main-content-home .app-info-home .button :hover a {
   padding-right: 25px;
 }
-.wrapper-home .main-content-home .app-info-home #app-btn :hover a:after {
+.wrapper-home .main-content-home .app-info-home .button :hover a:after {
   opacity: 1;
   right: 0;
 }
