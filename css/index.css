@@ -292,7 +292,8 @@ header nav ul li a h2:hover {
     flex-flow: column nowrap;
   }
 }
-.wrapper-home .main-content-home .banner-image span {
+.wrapper-home .main-content-home .banner-image span,
+.wrapper-home .main-content-home .banner-image a {
   text-decoration: none;
 }
 .wrapper-home .main-content-home .banner-image .button {
