@@ -143,12 +143,13 @@ header {
   flex-flow: row nowrap;
   justify-items: flex-end;
   width: 100%;
-  height: 150px;
+  height: 120px;
 }
 @media (max-width: 800px) {
   header {
+    flex-flow: column nowrap;
     width: 100%;
-    justify-content: space-evenly;
+    justify-items: flex-start;
   }
 }
 @media (max-width: 500px) {
@@ -159,7 +160,7 @@ header {
   }
 }
 header #logo {
-  margin-top: 3vh;
+  margin-top: 4%;
   margin-bottom: 1vh;
   margin-left: 3%;
 }
@@ -264,7 +265,7 @@ header nav ul li a h2:hover {
 }
 .wrapper-home {
   max-width: 1350px;
-  height: 900px;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -277,15 +278,15 @@ header nav ul li a h2:hover {
 @media (max-width: 800px) {
   .wrapper-home {
     width: 100%;
-    height: 100%;
+    height: 90%;
     flex-flow: column nowrap;
     justify-items: center;
-    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
   .wrapper-home {
     justify-items: flex-start;
+    height: 100%;
   }
 }
 .wrapper-home .main-content-home {
@@ -296,7 +297,7 @@ header nav ul li a h2:hover {
 }
 @media (max-width: 800px) {
   .wrapper-home .main-content-home {
-    height: 80%;
+    height: 100%;
     width: 100%;
     flex-flow: column nowrap;
     justify-items: flex-start;
@@ -307,17 +308,19 @@ header nav ul li a h2:hover {
   .wrapper-home .main-content-home {
     justify-items: space-evenly;
     align-content: space-around;
-    height: 100%;
+    height: 80%;
   }
 }
 .wrapper-home .main-content-home .banner-image {
   align-items: center;
+  justify-items: center;
   background-size: 100%, 30%;
   background-image: url("../img/wall-background.png");
   height: 100%;
   width: 100%;
   display: flex;
   background-repeat: no-repeat;
+  background-position: center;
 }
 @media (max-width: 800px) {
   .wrapper-home .main-content-home .banner-image {
@@ -325,11 +328,11 @@ header nav ul li a h2:hover {
     flex-flow: column nowrap;
     background-size: auto;
     align-items: center;
+    height: 100%;
   }
 }
 @media (max-width: 500px) {
   .wrapper-home .main-content-home .banner-image {
-    background-position: center;
     background-size: 90%, 100%;
     flex-flow: column nowrap;
     background-repeat: repeat;
@@ -342,8 +345,8 @@ header nav ul li a h2:hover {
   border-radius: 6px;
   border: none;
   background-color: black;
-  margin-bottom: 15%;
-  margin-top: 20%;
+  margin-bottom: 12%;
+  margin-top: 10%;
   width: 170px;
   height: 100px;
   text-align: center;
@@ -401,9 +404,9 @@ header nav ul li a h2:hover {
 .wrapper-home .main-content-home .app-btn-home {
   margin: 1%;
   width: 30%;
-  height: 50%;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-bottom: 6%;
+  padding-left: 4%;
+  padding-right: 4%;
   border: 4px solid #ffdb70;
   border-radius: 5px;
   background-color: #fb8570;
@@ -426,19 +429,16 @@ header nav ul li a h2:hover {
 }
 @media (max-width: 500px) {
   .wrapper-home .main-content-home .app-btn-home {
-    transform: scale(0.7);
-    line-heght: 20%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 0%;
+    width: 100%;
+    height: 42%;
   }
 }
 .wrapper-home .main-content-home .team-home {
   width: 30%;
   margin: 1%;
-  padding-left: 2%;
-  padding-right: 2%;
-  height: 50%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 6%;
   border: 4px solid #ffdb70;
   border-radius: 5px;
   background-color: #fb8570;
@@ -461,19 +461,16 @@ header nav ul li a h2:hover {
 }
 @media (max-width: 500px) {
   .wrapper-home .main-content-home .team-home {
-    transform: scale(0.7);
-    line-heght: 20%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 0%;
+    width: 100%;
+    height: 43%;
   }
 }
 .wrapper-home .main-content-home .course-info-home {
   margin: 1%;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
   width: 30%;
-  height: 50%;
+  padding-bottom: 6%;
   border: 4px solid #ffdb70;
   border-radius: 5px;
   background-color: #fb8570;
@@ -496,40 +493,141 @@ header nav ul li a h2:hover {
 }
 @media (max-width: 500px) {
   .wrapper-home .main-content-home .course-info-home {
-    transform: scale(0.7);
-    line-heght: 20%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 0%;
+    width: 100%;
+    height: 43%;
   }
 }
 .wrapper-about {
-  width: 95%;
-  height: 1200px;
+  max-width: 1350px;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  align-content: flex-start;
   margin: 0 auto;
   background-color: #98f7e5;
+  font-family: "Open Sans", sans-serif;
 }
-.wrapper-about .main-content-about {
-  height: 75%;
+@media (max-width: 800px) {
+  .wrapper-about {
+    width: 100%;
+    height: 90%;
+    flex-flow: column nowrap;
+    justify-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper-about {
+    justify-items: flex-start;
+    height: 100%;
+  }
+}
+.wrapper-about .team-about {
+  height: 45%;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  background-image: url("../img/wall-background.png");
-  background-size: 1000px 900px;
+  justify-items: center;
+  background-image: url("..img/about-background.jpg");
 }
-.wrapper-about .main-content-about .team-about {
+@media (max-width: 800px) {
+  .wrapper-about .team-about {
+    height: 100%;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-items: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper-about .team-about {
+    justify-items: space-evenly;
+    align-content: space-around;
+    height: 80%;
+  }
+}
+.wrapper-about .team-about .person {
+  margin: 1%;
+  height: 60%;
+  width: 35%;
+  border: 4px solid #ffdb70;
+  border-radius: 5px;
+  background-color: #fb8570;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+}
+@media (max-width: 800px) {
+  .wrapper-about .team-about .person {
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.8);
+    text-size: 18px;
+    text-align: justify;
+    align-items: center;
+    line-height: 15px;
+    width: 60%;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper-about .team-about .person {
+    width: 100%;
+    height: 42%;
+  }
+}
+.wrapper-about .team-about-2 {
+  height: 45%;
+  width: 100%;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 80%;
-  border: 2px solid black;
-  padding: 10%;
+  flex-flow: row nowrap;
+  justify-items: center;
+  background-image: url("..img/about-background.jpg");
+}
+@media (max-width: 800px) {
+  .wrapper-about .team-about-2 {
+    height: 100%;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-items: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper-about .team-about-2 {
+    justify-items: space-evenly;
+    align-content: space-around;
+    height: 80%;
+  }
+}
+.wrapper-about .team-about-2 .person-2 {
+  margin: 1%;
+  height: 60%;
+  width: 35%;
+  border: 4px solid #ffdb70;
+  border-radius: 5px;
+  background-color: #fb8570;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+}
+@media (max-width: 800px) {
+  .wrapper-about .team-about-2 .person-2 {
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.8);
+    text-size: 18px;
+    text-align: justify;
+    align-items: center;
+    line-height: 15px;
+    width: 60%;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper-about .team-about-2 .person-2 {
+    width: 100%;
+    height: 42%;
+  }
 }
 footer {
   display: flex;
@@ -537,7 +635,7 @@ footer {
   align-items: center;
   flex-flow: column nowrap;
   width: 100%;
-  height: 200px;
+  height: 300px;
   line-height: 20px;
   background-color: #98f7e5;
 }

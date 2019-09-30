@@ -1,7 +1,7 @@
 // Home Content
 .wrapper-home {
- max-width: 1350px;
-  height: 900px;
+  max-width: 1350px;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -13,14 +13,14 @@
 
   @media @tablet {
     width: 100%;
-    height: 100%;
+    height: 90%;
     flex-flow: column nowrap;
     justify-items: center;
-    margin: 0 auto;
   }
 
   @media @mobile {
     justify-items: flex-start;
+    height: 100%;
   }
 
   .main-content-home {
@@ -29,38 +29,42 @@
     flex-flow: row nowrap;
     justify-items: center;
 
+
     @media @tablet {
-      height: 80%;
+      height: 100%;
       width: 100%;
       flex-flow: column nowrap;
       justify-items: flex-start;
       align-items: flex-start;
+
     }
 
     @media @mobile {
       justify-items: space-evenly;
-      align-content:space-around;
-      height: 100%;
+      align-content: space-around;
+      height: 80%;
     }
 
     .banner-image {
       align-items: center;
+     justify-items: center;
       background-size: 100%, 30%;
       background-image: url("../img/wall-background.png");
       height: 100%;
       width: 100%;
       display: flex;
       background-repeat: no-repeat;
+      background-position: center;
 
       @media @tablet {
         background-size: 65%, 70%;
         flex-flow: column nowrap;
         background-size: auto;
         align-items: center;
+        height: 100%;
       }
 
       @media @mobile {
-        background-position: center;
         background-size: 90%, 100%;
         flex-flow: column nowrap;
         background-repeat: repeat;
@@ -74,8 +78,8 @@
         border: none;
         background-color: black;
         // color: white;
-        margin-bottom:15%;
-        margin-top: 20%;
+        margin-bottom: 12%;
+        margin-top: 10%;
         width: 170px;
         height: 100px;
         text-align: center;
@@ -142,9 +146,9 @@
     .app-btn-home {
       margin: 1%;
       width: 30%;
-     height:50%;
-     padding-left:2%;
-     padding-right:2%;
+      padding-bottom: 6%;
+      padding-left: 4%;
+      padding-right: 4%;
       border: 4px solid @color-3;
       border-radius: 5px;
       background-color: @color-2;
@@ -165,19 +169,16 @@
       }
 
       @media @mobile {
-        transform: scale(0.7);
-        line-heght: 20%;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-top: 0%;
+        width: 100%;
+         height: 42%;
       }
     }
     .team-home {
       width: 30%;
       margin: 1%;
-      padding-left:2%;
-     padding-right:2%;
-     height: 50%;
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-bottom: 6%;
       border: 4px solid @color-3;
       border-radius: 5px;
       background-color: @color-2;
@@ -198,19 +199,16 @@
       }
 
       @media @mobile {
-        transform: scale(0.7);
-        line-heght: 20%;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-top: 0%;
+        width: 100%;
+        height: 43%;
       }
     }
     .course-info-home {
       margin: 1%;
-      padding-left:2%;
-     padding-right:2%;
+      padding-left: 4%;
+      padding-right: 4%;
       width: 30%;
-     height: 50%;
+      padding-bottom: 6%;
       border: 4px solid @color-3;
       border-radius: 5px;
       background-color: @color-2;
@@ -231,11 +229,8 @@
       }
 
       @media @mobile {
-        transform: scale(0.7);
-        line-heght: 20%;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-top: 0%;
+        width: 100%;
+       height: 43%;
       }
     }
   }
