@@ -3,42 +3,41 @@ header {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: center;
+  justify-items: flex-end;
   width: 100%;
-  height: 120px;
-
-  @media @tablet {
-    height: 10%;
-  }
+  height: 100px;
 
   @media @mobile {
     flex-flow: column nowrap;
-    height: 500px;
+    height: 300px;
+    // justify-content: space-evenly;
   }
 
   #logo {
     margin-top: 2vh;
     margin-bottom: 1vh;
     margin-left: 3%;
+
     @media @tablet {
       display: none;
     }
   }
 
   nav {
-    margin-left: 33%;
-    margin-right: 5%;
-    width: 50%;
+    margin-left: 10%;
+    width: 100%;
     height: 100%;
+    justify-content: space-between;
 
     @media @tablet {
-      height: 30%;
-      margin: 0;
       width: 100%;
+      margin-left: 20%;
     }
 
     @media @mobile {
       height: 100%;
+      width: 100%;
+      margin: 0;
     }
 
     ul {
@@ -64,9 +63,12 @@ header {
       }
 
       li {
-        align-self: center;
-        width: 18%;
+        width: 15%;
         height: 100%;
+
+        @media @tablet {
+          width: 10%;
+        }
 
         @media @mobile {
           width: 100%;
@@ -78,6 +80,10 @@ header {
           text-decoration: none;
           color: black;
           font-family: "Noto Sans JP", sans-serif;
+
+          @media @tablet {
+            font-size: 0.9rem;
+          }
           @media @mobile {
             width: 100%;
           }

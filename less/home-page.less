@@ -1,7 +1,7 @@
 // Home Content
 .wrapper-home {
-  width: 100%;
-  height: 1200px;
+  width: 85%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,46 +10,66 @@
   margin: 0 auto;
   background-color: @main-alt-color;
   font-family: "Open Sans", sans-serif;
-  font-size: 90%;
+
+  @media @tablet {
+    width: 100%;
+    height: 50%;
+  }
 
   .main-content-home {
-    height: 75%;
+    height: 70%;
     display: flex;
     flex-flow: row nowrap;
-    background-image: url("../img/wall-background.png");
-    background-size: 1000px 900px;
-    align-items: center;
+    justify-content: center;
 
-    @media @mobile {
-      flex-flow: column nowrap;
+    @media @tablet {
+      height: 100%;
     }
 
-    .app-info-home {
-      margin: 6%;
-      padding: 4% 5%;
-      border: 4px solid @color-3;
-      border-radius: 5px;
-      background-color: @color-2;
-      text-align: center;
+    .banner-image {
+      align-items: center;
+      background-size: 55%, 100%;
+      background-image: url("../img/wall-background.png");
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      margin-bottom: 2%;
 
-      #app-btn {
-        display: inline-block;
+      @media @tablet {
+        background-size: 65%, 70%;
+      }
+
+      @media @mobile {
+        background-size: 45%, 100%;
+        flex-flow: column nowrap;
+      }
+
+      .button {
+        text-decoration: none;
+        border-radius: 4px;
         border: none;
         background-color: black;
         color: #98f7e5;
-        padding: 15%;
-        margin: 0% 6% 35% 6%;
+        margin-bottom: 15%;
+        width: 110px;
+        height: 50px;
         text-align: center;
-        font-size: 20px;
+        font-size: 13px;
         transition: all 0.5s;
         cursor: pointer;
+        &:hover {padding-right: 25px;
 
-        a {
+      background-color: white;
+      color: black;
+
+      }
+
+        .button span {
           cursor: pointer;
           display: inline-block;
           position: relative;
           transition: 0.5s;
-          text-decoration: none;
           font-family: "Open Sans", sans-serif;
         }
 
@@ -64,56 +84,47 @@
 
         :hover a {
           padding-right: 25px;
+          background-color: white;
+          color: black;
         }
 
         :hover a:after {
           opacity: 1;
+
           right: 0;
         }
       }
-    }
-  }
 
-  .team-home {
-    margin: 5%;
-    padding: 4% 5%;
-    border: 4px solid @color-3;
-    border-radius: 5px;
-    height: 40%;
-    width: 50%;
-    background-color: @color-2;
-    text-align: center;
+      .app-btn-home {
+        margin: 2%;
+        padding: 9% 4%;
+        border: 4px solid @color-3;
+        border-radius: 5px;
+        background-color: @color-2;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .team-home {
+        margin: 2%;
+        padding: 9% 4%;
+        border: 4px solid @color-3;
+        border-radius: 5px;
+        background-color: @color-2;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+      }
 
-    #team-btn {
-      padding: 4%;
-      margin: 0% 6% 35% 6%;
-
-      a {
-        text-decoration: none;
-        font-family: "Open Sans", sans-serif;
+      .course-info-home {
+        margin: 2%;
+        padding: 9% 4%;
+        border: 4px solid @color-3;
+        background-color: @color-2;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
       }
     }
   }
-
-  .course-info-home {
-    margin: 5%;
-    padding: 4% 5%;
-    border: 4px solid @color-3;
-    background-color: @color-2;
-    text-align: center;
-    #course-btn {
-      padding: 5%;
-      margin: 0% 6% 35% 6%;
-      a {
-        display: flex;
-        flex-wrap: nowrap;
-        text-decoration: none;
-        font-family: "Open Sans", sans-serif;
-      }
-    }
-  }
-}
-.bottom-content-home {
-  margin-top: 4%;
-  line-height: 10px;
 }
