@@ -7,7 +7,6 @@ header {
   height: 100px;
 
 @media @tablet {
-  height: 100px;
   width: 100%;
   justify-content: space-evenly;
 }
@@ -15,8 +14,8 @@ header {
 
   @media @mobile {
     flex-flow: column nowrap;
-    height: 300px;
-    // justify-content: space-evenly;
+    justify-content: space-around;
+    height: 100%;
   }
 
   #logo {
@@ -42,7 +41,6 @@ header {
     }
 
     @media @mobile {
-      height: 100%;
       width: 100%;
       margin: 0;
     }
@@ -61,7 +59,6 @@ header {
         flex-direction: column;
         flex-wrap: nowrap;
         text-align: center;
-        height: 100%;
       }
 
       @media @tablet {
@@ -93,6 +90,7 @@ header {
             font-size: 0.9rem;
           }
           @media @mobile {
+            font-size: 1rem;
             width: 100%;
           }
           h2 {
