@@ -1,7 +1,7 @@
 // Home Content
 .wrapper-home {
-  width: 100%;
-  height: 100%;
+ max-width: 1350px;
+  height: 900px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -24,7 +24,7 @@
   }
 
   .main-content-home {
-    height: 100%;
+    height: 95%;
     display: flex;
     flex-flow: row nowrap;
     justify-items: center;
@@ -50,8 +50,6 @@
       height: 100%;
       width: 100%;
       display: flex;
-      flex-flow: row nowrap;
-      margin-bottom: 2%;
       background-repeat: no-repeat;
 
       @media @tablet {
@@ -76,7 +74,8 @@
         border: none;
         background-color: black;
         // color: white;
-        margin-bottom: 15%;
+        margin-bottom:15%;
+        margin-top: 20%;
         width: 170px;
         height: 100px;
         text-align: center;
@@ -141,8 +140,11 @@
     }
 
     .app-btn-home {
-      margin: 2%;
-      padding: 9% 4%;
+      margin: 1%;
+      width: 30%;
+     height:50%;
+     padding-left:2%;
+     padding-right:2%;
       border: 4px solid @color-3;
       border-radius: 5px;
       background-color: @color-2;
@@ -171,8 +173,11 @@
       }
     }
     .team-home {
-      margin: 2%;
-      padding: 9% 4%;
+      width: 30%;
+      margin: 1%;
+      padding-left:2%;
+     padding-right:2%;
+     height: 50%;
       border: 4px solid @color-3;
       border-radius: 5px;
       background-color: @color-2;
@@ -201,8 +206,11 @@
       }
     }
     .course-info-home {
-      margin: 2%;
-      padding: 9% 4%;
+      margin: 1%;
+      padding-left:2%;
+     padding-right:2%;
+      width: 30%;
+     height: 50%;
       border: 4px solid @color-3;
       border-radius: 5px;
       background-color: @color-2;
