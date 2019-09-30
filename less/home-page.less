@@ -20,7 +20,7 @@
   }
 
   .main-content-home {
-    height: 70%;
+    height: 75%;
     display: flex;
     flex-flow: row nowrap;
     justify-items: center;
@@ -61,7 +61,7 @@
         border-radius: 6px;
         border: none;
         background-color: black;
-        color: white;
+        // color: white;
         margin-bottom: 15%;
         width: 170px;
         height: 100px;
@@ -70,122 +70,124 @@
         transition: all 0.5s;
         cursor: pointer;
 
-        :hover {
-          padding-right: 25px;
+          :hover {
+            padding-right: 25px;
+          }
+
+          @media @tablet {
+            transform: scale(0.6);
+            margin-bottom: 5%;
+          }
         }
 
-        @media @tablet {
-          transform: scale(0.6);
-          margin-bottom: 5%;
-        }
-      }
-
-      .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-        font-family: "Open Sans", sans-serif;
-        color: white;
-
-        :hover {
-          color: white;
-        }
-
-        .button span:after {
-          position: absolute;
-          opacity: 0;
-          top: 0;
-          right: -20px;
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
           transition: 0.5s;
+          font-family: "Open Sans", sans-serif;
           color: white;
-          background-color: black;
 
           :hover {
-            opacity: 1;
+            color: black;
+          }
+
+          .button span:after {
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+            // color: black;
             background-color: black;
-            color: white;
-            right: 0;
+
+            :hover {
+              opacity: 1;
+              background-color: black;
+              // color: black;
+              right: 0;
+            }
           }
         }
       }
 
-      a {
-        text-decoration: none;
-        color: white;
-
-        :hover {
-          padding-right: 25px;
-          background-color: black;
+        a {
+          text-decoration: none;
           color: white;
+
+          :hover {
+            padding-right: 25px;
+        color: black;
+
+          }
         }
-      }
 
-      .app-btn-home {
-        margin: 2%;
-        padding: 9% 4%;
-        border: 4px solid @color-3;
-        border-radius: 5px;
-        background-color: @color-2;
-        text-align: center;
-        font-size: 15px;
-        line-height: 20px;
+        .app-btn-home {
+          margin: 2%;
+          padding: 9% 4%;
+          border: 4px solid @color-3;
+          border-radius: 5px;
+          background-color: @color-2;
+          text-align: center;
+          font-size: 15px;
+          line-height: 20px;
 
-        @media @tablet {
-          display: flex;
-          flex-direction: column;
-          transform: scale(0.8);
-          text-size: 18px;
-          text-align: justify;
-          align-items: center;
-          line-height: 15px;
-          width: 60%;
-          margin: 0;
+          @media @tablet {
+            display: flex;
+            flex-direction: column;
+            transform: scale(0.8);
+            text-size: 18px;
+            text-align: justify;
+            align-items: center;
+            line-height: 15px;
+            width: 60%;
+            margin: 0;
+          }
         }
-      }
-      .team-home {
-        margin: 2%;
-        padding: 9% 4%;
-        border: 4px solid @color-3;
-        border-radius: 5px;
-        background-color: @color-2;
-        text-align: center;
-        font-size: 15px;
-        line-height: 20px;
+        .team-home {
+          margin: 2%;
+          padding: 9% 4%;
+          border: 4px solid @color-3;
+          border-radius: 5px;
+          background-color: @color-2;
+          text-align: center;
+          font-size: 15px;
+          line-height: 20px;
 
-        @media @tablet {
-          display: flex;
-          flex-direction: column;
-          transform: scale(0.8);
-          text-size: 18px;
-          text-align: justify;
-          align-items: center;
-          line-height: 15px;
-          width: 60%;
+          @media @tablet {
+            display: flex;
+            flex-direction: column;
+            transform: scale(0.8);
+            text-size: 18px;
+            text-align: justify;
+            align-items: center;
+            line-height: 15px;
+            width: 60%;
+            margin: 0;
+          }
         }
-      }
 
-      .course-info-home {
-        margin: 2%;
-        padding: 9% 4%;
-        border: 4px solid @color-3;
-        border-radius: 5px;
-        background-color: @color-2;
-        text-align: center;
-        font-size: 15px;
-        line-height: 20px;
+        .course-info-home {
+          margin: 2%;
+          padding: 9% 4%;
+          border: 4px solid @color-3;
+          border-radius: 5px;
+          background-color: @color-2;
+          text-align: center;
+          font-size: 15px;
+          line-height: 20px;
 
-        @media @tablet {
-          display: flex;
-          flex-direction: column;
-          transform: scale(0.8);
-          text-size: 18px;
-          text-align: justify;
-          align-items: center;
-          line-height: 15px;
-          width: 60%;
+          @media @tablet {
+            display: flex;
+            flex-direction: column;
+            transform: scale(0.8);
+            text-size: 18px;
+            text-align: justify;
+            align-items: center;
+            line-height: 15px;
+            width: 60%;
+            margin:0;
+          }
         }
-      }
     }
   }
-}
