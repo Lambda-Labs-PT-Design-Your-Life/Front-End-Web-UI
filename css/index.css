@@ -93,9 +93,15 @@ video {
 }
 html,
 body {
-  height: 1000px;
-  width: 1900px;
+  height: 1200px;
+  width: 1500px;
   margin: 0 auto;
+}
+@media (max-width: 800px) {
+  html,
+  body {
+    width: 90%;
+  }
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -129,10 +135,16 @@ table {
 header {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
   justify-items: flex-end;
   width: 100%;
   height: 100px;
+}
+@media (max-width: 800px) {
+  header {
+    height: 100px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
 }
 @media (max-width: 500px) {
   header {
@@ -151,6 +163,7 @@ header #logo {
   }
 }
 header nav {
+  display: flex;
   margin-left: 10%;
   width: 100%;
   height: 100%;
@@ -159,7 +172,7 @@ header nav {
 @media (max-width: 800px) {
   header nav {
     width: 100%;
-    margin-left: 20%;
+    justify-content: center;
   }
 }
 @media (max-width: 500px) {
@@ -190,16 +203,17 @@ header nav ul {
 @media (max-width: 800px) {
   header nav ul {
     justify-content: space-evenly;
-    align-items: center;
+    align-content: center;
+    width: 100%;
   }
 }
 header nav ul li {
-  width: 15%;
+  width: 18%;
   height: 100%;
 }
 @media (max-width: 800px) {
   header nav ul li {
-    width: 10%;
+    width: 15%;
   }
 }
 @media (max-width: 500px) {
@@ -244,7 +258,7 @@ header nav ul li a h2:hover {
   color: white;
 }
 .wrapper-home {
-  width: 85%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -258,33 +272,44 @@ header nav ul li a h2:hover {
 @media (max-width: 800px) {
   .wrapper-home {
     width: 100%;
-    height: 50%;
+    height: 100%;
+    flex-flow: column nowrap;
+    justify-items: center;
+    margin: 0 auto;
   }
 }
 .wrapper-home .main-content-home {
   height: 70%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-items: center;
 }
 @media (max-width: 800px) {
   .wrapper-home .main-content-home {
-    height: 100%;
+    height: 80%;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-items: flex-start;
+    align-items: flex-start;
   }
 }
 .wrapper-home .main-content-home .banner-image {
   align-items: center;
-  background-size: 55%, 100%;
+  background-size: 100%, 30%;
   background-image: url("../img/wall-background.png");
   height: 100%;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 2%;
+  background-repeat: no-repeat;
 }
 @media (max-width: 800px) {
   .wrapper-home .main-content-home .banner-image {
     background-size: 65%, 70%;
+    flex-flow: column nowrap;
+    background-size: auto;
+    align-items: center;
   }
 }
 @media (max-width: 500px) {
@@ -295,46 +320,61 @@ header nav ul li a h2:hover {
 }
 .wrapper-home .main-content-home .banner-image .button {
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   border: none;
   background-color: black;
-  color: #98f7e5;
+  color: white;
   margin-bottom: 15%;
-  width: 110px;
-  height: 50px;
+  width: 170px;
+  height: 100px;
   text-align: center;
-  font-size: 13px;
+  font-size: 1.2rem;
   transition: all 0.5s;
   cursor: pointer;
 }
-.wrapper-home .main-content-home .banner-image .button:hover {
+.wrapper-home .main-content-home .banner-image .button :hover {
   padding-right: 25px;
-  background-color: white;
-  color: black;
 }
-.wrapper-home .main-content-home .banner-image .button .button span {
+@media (max-width: 800px) {
+  .wrapper-home .main-content-home .banner-image .button {
+    transform: scale(0.6);
+    margin-bottom: 5%;
+  }
+}
+.wrapper-home .main-content-home .banner-image .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
   font-family: "Open Sans", sans-serif;
+  color: white;
 }
-.wrapper-home .main-content-home .banner-image .button a:after {
-  content: "\00bb";
+.wrapper-home .main-content-home .banner-image .button span :hover {
+  color: white;
+}
+.wrapper-home .main-content-home .banner-image .button span .button span:after {
   position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
+  color: white;
+  background-color: black;
 }
-.wrapper-home .main-content-home .banner-image .button :hover a {
-  padding-right: 25px;
-  background-color: white;
-  color: black;
-}
-.wrapper-home .main-content-home .banner-image .button :hover a:after {
+.wrapper-home .main-content-home .banner-image .button span .button span:after :hover {
   opacity: 1;
+  background-color: black;
+  color: white;
   right: 0;
+}
+.wrapper-home .main-content-home .banner-image a {
+  text-decoration: none;
+  color: white;
+}
+.wrapper-home .main-content-home .banner-image a :hover {
+  padding-right: 25px;
+  background-color: black;
+  color: white;
 }
 .wrapper-home .main-content-home .banner-image .app-btn-home {
   margin: 2%;
@@ -346,6 +386,19 @@ header nav ul li a h2:hover {
   font-size: 15px;
   line-height: 20px;
 }
+@media (max-width: 800px) {
+  .wrapper-home .main-content-home .banner-image .app-btn-home {
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.8);
+    text-size: 18px;
+    text-align: justify;
+    align-items: center;
+    line-height: 15px;
+    width: 60%;
+    margin: 0;
+  }
+}
 .wrapper-home .main-content-home .banner-image .team-home {
   margin: 2%;
   padding: 9% 4%;
@@ -356,14 +409,39 @@ header nav ul li a h2:hover {
   font-size: 15px;
   line-height: 20px;
 }
+@media (max-width: 800px) {
+  .wrapper-home .main-content-home .banner-image .team-home {
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.8);
+    text-size: 18px;
+    text-align: justify;
+    align-items: center;
+    line-height: 15px;
+    width: 60%;
+  }
+}
 .wrapper-home .main-content-home .banner-image .course-info-home {
   margin: 2%;
   padding: 9% 4%;
   border: 4px solid #ffdb70;
+  border-radius: 5px;
   background-color: #fb8570;
   text-align: center;
   font-size: 15px;
   line-height: 20px;
+}
+@media (max-width: 800px) {
+  .wrapper-home .main-content-home .banner-image .course-info-home {
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.8);
+    text-size: 18px;
+    text-align: justify;
+    align-items: center;
+    line-height: 15px;
+    width: 60%;
+  }
 }
 .wrapper-about {
   width: 95%;

@@ -16,6 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -26,10 +27,14 @@ time, mark, audio, video {
 
 }
 html, body{
-	height: 1000px;
-	width: 1900px;
+	height: 1200px;
+	width: 1500px;
 	margin: 0 auto;
 
+	@media @tablet {
+		width: 90%;
+
+	}
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,

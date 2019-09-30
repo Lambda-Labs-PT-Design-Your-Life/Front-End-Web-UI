@@ -1,0 +1,5 @@
+{
+    "javascript.implicitProjectConfig.checkJs": true,
+    "jshint.lintHTML": true,
+    "debug.inlineValues": true
+}
