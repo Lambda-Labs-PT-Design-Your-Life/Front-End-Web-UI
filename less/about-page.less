@@ -21,12 +21,17 @@
     height: 100%;
   }
 
+#team {
+  display: block;
+  justify-self: flex-start;
+}
   .team-about {
     height: 45%;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-items: center;
+    justify-items: space-evenly;
+    align-items: center;
     background-image: url("..img/about-background.jpg");
 
     @media @tablet {
@@ -78,7 +83,8 @@
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-items: center;
+    justify-items: space-evenly;
+    align-items: center;
     background-image: url("..img/about-background.jpg");
 
     @media @tablet {

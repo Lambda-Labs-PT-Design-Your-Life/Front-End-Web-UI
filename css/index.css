@@ -515,12 +515,17 @@ header nav ul li a h2:hover {
     height: 100%;
   }
 }
+.wrapper-about #team {
+  display: block;
+  justify-self: flex-start;
+}
 .wrapper-about .team-about {
   height: 45%;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-items: center;
+  justify-items: space-evenly;
+  align-items: center;
   background-image: url("..img/about-background.jpg");
 }
 @media (max-width: 800px) {
@@ -574,7 +579,8 @@ header nav ul li a h2:hover {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-items: center;
+  justify-items: space-evenly;
+  align-items: center;
   background-image: url("..img/about-background.jpg");
 }
 @media (max-width: 800px) {
