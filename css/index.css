@@ -93,7 +93,7 @@ video {
 }
 html,
 body {
-  height: 900px;
+  height: 1200px;
   max-width: 1350px;
   margin: 0 auto;
 }
@@ -266,12 +266,12 @@ header nav ul li a h2:hover {
 }
 .wrapper-home {
   max-width: 1350px;
-  height: 100%;
+  height: 1100px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: flex-starts;
   margin: 0 auto;
   background-color: #98f7e5;
   font-family: "Open Sans", sans-serif;
@@ -291,7 +291,7 @@ header nav ul li a h2:hover {
   }
 }
 .wrapper-home .main-content-home {
-  height: 95%;
+  height: 89%;
   display: flex;
   flex-flow: row nowrap;
   justify-items: center;
@@ -314,7 +314,7 @@ header nav ul li a h2:hover {
 }
 .wrapper-home .main-content-home .banner-image {
   align-items: center;
-  justify-items: center;
+  justify-items: space-evenly;
   background-size: 100%, 30%;
   background-image: url("../img/wall-background.png");
   background-color: #ffdb70;
@@ -405,13 +405,16 @@ header nav ul li a h2:hover {
 }
 .wrapper-home .main-content-home .app-btn-home {
   margin: 1%;
-  padding: 0% 5% 5% 0%;
+  max-width: 420px;
+  max-height: 450px;
+  padding: 6%;
   border: 4px solid #ffdb70;
   border-radius: 5px;
   background-color: #fb8570;
   text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 20px;
+  background: rgba(235, 134, 134, 0.495);
 }
 @media (max-width: 800px) {
   .wrapper-home .main-content-home .app-btn-home {
@@ -433,15 +436,17 @@ header nav ul li a h2:hover {
   }
 }
 .wrapper-home .main-content-home .team-home {
+  max-width: 420px;
+  max-height: 450px;
   margin: 1%;
-  padding: 0% 5% 5% 0;
-  padding-bottom: 6%;
+  padding: 6%;
   border: 4px solid #ffdb70;
   border-radius: 5px;
   background-color: #fb8570;
   text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 20px;
+  background: rgba(235, 134, 134, 0.495);
 }
 @media (max-width: 800px) {
   .wrapper-home .main-content-home .team-home {
@@ -463,14 +468,17 @@ header nav ul li a h2:hover {
   }
 }
 .wrapper-home .main-content-home .course-info-home {
+  max-width: 420px;
+  max-height: 450px;
   margin: 1%;
-  padding: 0% 5% 5% 0;
+  padding: 6%;
   border: 4px solid #ffdb70;
   border-radius: 5px;
   background-color: #fb8570;
   text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 20px;
+  background: rgba(235, 134, 134, 0.495);
 }
 @media (max-width: 800px) {
   .wrapper-home .main-content-home .course-info-home {
@@ -635,7 +643,7 @@ footer {
   align-items: center;
   flex-flow: column nowrap;
   width: 100%;
-  height: 300px;
+  height: 200px;
   line-height: 20px;
   background-color: #98f7e5;
 }
