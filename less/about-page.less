@@ -11,7 +11,7 @@
 
   @media @tablet {
     width: 100%;
-    height: 90%;
+    height: 100%;
     flex-flow: column nowrap;
     justify-items: center;
   }
@@ -32,12 +32,14 @@
     flex-flow: row wrap;
     background-repeat: no-repeat;
     background-position: center;
+    box-sizing: border-box;
 
     @media @tablet {
       background-size: 65%, 70%;
-      flex-flow: column nowrap;
+      flex-flow: column wrap;
       background-size: auto;
       align-items: center;
+      justify-items: center;
       height: 100%;
     }
 
@@ -55,45 +57,45 @@
       font-family: "Open Sans", sans-serif;
       width: 100%;
       justify-content: center;
-      margin-top: 10%;
+      margin-top: 5%;
     }
 
     .team-about {
-height: 35%;
+      height: 40%;
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
       justify-items: space-evenly;
       align-items: space-evenly;
-      background-image: url("..img/about-background.jpg");
+      box-sizing: border-box;
 
       @media @tablet {
-        height: 100%;
+        height: 30%;
         width: 100%;
         flex-flow: column nowrap;
-        justify-items: flex-start;
-        align-items: flex-start;
+        justify-items: space-evenly;
+        align-items: space-evenly;
       }
 
       @media @mobile {
-        justify-items: space-evenly;
-        align-content: space-around;
-        height: 80%;
+        align-items: space-evenly;
+        height: auto;
       }
 
       .person {
         display: flex;
         flex-flow: column nowrap;
-        justify-items: space-evenlu;
+        justify-items: flex-start;
+        align-items: center;
         margin: 1%;
-        padding: 1%;
+        width: 25%;
         border: 4px solid @color-3;
         border-radius: 5px;
         background-color: @color-2;
         background: rgba(235, 134, 134, 0.495);
         text-align: center;
         font-family: "Open Sans", sans-serif;
-        flex-basis: 1 1 auto;
+        box-sizing: border-box;
 
         h3 {
           font-size: 2rem;
@@ -106,82 +108,73 @@ height: 35%;
           margin: 5%;
           height: auto;
         }
-        img {
+
+        .img {
           display: flex;
           transform: scale(0.4);
-          justify-self: flex-start;
+          z-index: auto;
+          min-width: 120px;
+          max-width: 300px;
+          min-height: 120px;
+          max-height: 300px;
+
+          @media @tablet {
+
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-bottom: 10%;
+            height: 200px;
+          }
         }
 
         @media @tablet {
-          display: flex;
-          flex-direction: column;
-          transform: scale(0.8);
-          text-align: justify;
-          align-items: center;
-          width: 60%;
-          margin: 0;
+          width: 40%;
+          height: 75%;
+          margin-left: 4%;
         }
 
         @media @mobile {
-          width: 100%;
           height: 42%;
         }
       }
     }
 
     .team-about-2 {
-      height: 25%;
+      height: 40%;
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
       justify-items: space-evenly;
-      align-items: center;
-      background-image: url("..img/about-background.jpg");
+      align-items: space-evenly;
+      box-sizing: border-box;
 
       @media @tablet {
-        height: 100%;
+        height: 30%;
         width: 100%;
         flex-flow: column nowrap;
-        justify-items: flex-start;
-        align-items: flex-start;
+        justify-items: space-evenly;
+        align-items: space-evenly;
       }
 
       @media @mobile {
-        justify-items: space-evenly;
-        align-content: space-around;
-        height: 80%;
+        align-items: space-evenly;
+        height: auto;
       }
 
       .person-2 {
         display: flex;
-        flex-flow: column nowrap;
-        justify-items: space-evenlu;
+        flex-flow: column wrap;
+        justify-items: space-evenly;
+        align-items: space-evenly;
         margin: 1%;
-        padding: 1%;
+        max-width: 25%;
         border: 4px solid @color-3;
         border-radius: 5px;
         background-color: @color-2;
         background: rgba(235, 134, 134, 0.495);
         text-align: center;
         font-family: "Open Sans", sans-serif;
-        flex-basis: 1 1 auto;
-
-        @media @tablet {
-          display: flex;
-          flex-direction: column;
-          transform: scale(0.8);
-          text-size: 18px;
-          text-align: justify;
-          align-items: center;
-          line-height: 15px;
-          width: 60%;
-          margin: 0;
-        }
-
-        @media @mobile {
-          width: 100%;
-          height: 42%;
-        }
+        box-sizing: border-box;
 
         h3 {
           font-size: 2rem;
@@ -194,10 +187,32 @@ height: 35%;
           margin: 5%;
           height: auto;
         }
-        img {
+
+        .img-2 {
           display: flex;
           transform: scale(0.4);
-          justify-self: flex-start;
+          z-index: auto;
+          height: 300px;
+          width: 300px;
+
+          @media @tablet {
+
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-bottom: 10%;
+            height: 200px;
+          }
+
+        }
+
+        @media @tablet {
+          width: 40%;
+          height: 75%;
+          margin-left: 4%;
+        }
+
+        @media @mobile {
+          height: 42%;
         }
       }
     }
