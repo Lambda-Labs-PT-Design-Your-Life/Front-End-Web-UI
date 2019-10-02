@@ -141,6 +141,7 @@ table {
 header {
   display: flex;
   flex-flow: row nowrap;
+  background-color: #dcfff8;
   align-content: center;
   justify-items: flex-end;
   width: 100%;
@@ -453,7 +454,6 @@ header nav ul li a h2:hover {
     display: flex;
     flex-direction: column;
     transform: scale(0.8);
-    text-size: 18px;
     text-align: justify;
     align-items: center;
     line-height: 15px;
@@ -483,9 +483,7 @@ header nav ul li a h2:hover {
 @media (max-width: 800px) {
   .wrapper-home .main-content-home .course-info-home {
     display: flex;
-    flex-direction: column;
     transform: scale(0.8);
-    text-size: 18px;
     text-align: justify;
     align-items: center;
     line-height: 15px;
@@ -523,12 +521,117 @@ header nav ul li a h2:hover {
     height: 100%;
   }
 }
-.wrapper-about #team {
-  display: block;
+.wrapper-about .banner-image-about {
+  align-items: space-evenly;
+  justify-items: space-evenly;
+  background-image: url("../img/about-background.jpg");
+  background-color: #ffdb70;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 800px) {
+  .wrapper-about .banner-image-about {
+    background-size: 65%, 70%;
+    flex-flow: column nowrap;
+    background-size: auto;
+    align-items: center;
+    height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper-about .banner-image-about {
+    background-size: 90%, 100%;
+    flex-flow: column nowrap;
+    background-repeat: repeat;
+    align-content: center;
+    height: 100%;
+  }
+}
+.wrapper-about .banner-image-about #team-intro {
+  display: flex;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10%;
+}
+.wrapper-about .banner-image-about .team-about {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-items: space-evenly;
+  align-items: space-evenly;
+  background-image: url("..img/about-background.jpg");
+}
+@media (max-width: 800px) {
+  .wrapper-about .banner-image-about .team-about {
+    height: 100%;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-items: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper-about .banner-image-about .team-about {
+    justify-items: space-evenly;
+    align-content: space-around;
+    height: 80%;
+  }
+}
+.wrapper-about .banner-image-about .team-about .person {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: space-evenlu;
+  margin: 1%;
+  padding: 1%;
+  border: 4px solid #ffdb70;
+  border-radius: 5px;
+  background-color: #fb8570;
+  background: rgba(235, 134, 134, 0.495);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  flex-basis: 1 1 auto;
+}
+.wrapper-about .banner-image-about .team-about .person h3 {
+  font-size: 2rem;
+  margin-top: 10%;
+  height: auto;
+}
+.wrapper-about .banner-image-about .team-about .person p {
+  font-size: 1.2rem;
+  margin: 5%;
+  height: auto;
+}
+.wrapper-about .banner-image-about .team-about .person img {
+  display: flex;
+  transform: scale(0.4);
   justify-self: flex-start;
 }
-.wrapper-about .team-about {
-  height: 45%;
+@media (max-width: 800px) {
+  .wrapper-about .banner-image-about .team-about .person {
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.8);
+    text-align: justify;
+    align-items: center;
+    width: 60%;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper-about .banner-image-about .team-about .person {
+    width: 100%;
+    height: 42%;
+  }
+}
+.wrapper-about .banner-image-about .team-about-2 {
+  height: 25%;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -537,7 +640,7 @@ header nav ul li a h2:hover {
   background-image: url("..img/about-background.jpg");
 }
 @media (max-width: 800px) {
-  .wrapper-about .team-about {
+  .wrapper-about .banner-image-about .team-about-2 {
     height: 100%;
     width: 100%;
     flex-flow: column nowrap;
@@ -546,25 +649,28 @@ header nav ul li a h2:hover {
   }
 }
 @media (max-width: 500px) {
-  .wrapper-about .team-about {
+  .wrapper-about .banner-image-about .team-about-2 {
     justify-items: space-evenly;
     align-content: space-around;
     height: 80%;
   }
 }
-.wrapper-about .team-about .person {
+.wrapper-about .banner-image-about .team-about-2 .person-2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: space-evenlu;
   margin: 1%;
-  height: 60%;
-  width: 35%;
+  padding: 1%;
   border: 4px solid #ffdb70;
   border-radius: 5px;
   background-color: #fb8570;
+  background: rgba(235, 134, 134, 0.495);
   text-align: center;
-  font-size: 15px;
-  line-height: 20px;
+  font-family: "Open Sans", sans-serif;
+  flex-basis: 1 1 auto;
 }
 @media (max-width: 800px) {
-  .wrapper-about .team-about .person {
+  .wrapper-about .banner-image-about .team-about-2 .person-2 {
     display: flex;
     flex-direction: column;
     transform: scale(0.8);
@@ -577,65 +683,25 @@ header nav ul li a h2:hover {
   }
 }
 @media (max-width: 500px) {
-  .wrapper-about .team-about .person {
+  .wrapper-about .banner-image-about .team-about-2 .person-2 {
     width: 100%;
     height: 42%;
   }
 }
-.wrapper-about .team-about-2 {
-  height: 45%;
-  width: 100%;
+.wrapper-about .banner-image-about .team-about-2 .person-2 h3 {
+  font-size: 2rem;
+  margin-top: 10%;
+  height: auto;
+}
+.wrapper-about .banner-image-about .team-about-2 .person-2 p {
+  font-size: 1.2rem;
+  margin: 5%;
+  height: auto;
+}
+.wrapper-about .banner-image-about .team-about-2 .person-2 img {
   display: flex;
-  flex-flow: row nowrap;
-  justify-items: space-evenly;
-  align-items: center;
-  background-image: url("..img/about-background.jpg");
-}
-@media (max-width: 800px) {
-  .wrapper-about .team-about-2 {
-    height: 100%;
-    width: 100%;
-    flex-flow: column nowrap;
-    justify-items: flex-start;
-    align-items: flex-start;
-  }
-}
-@media (max-width: 500px) {
-  .wrapper-about .team-about-2 {
-    justify-items: space-evenly;
-    align-content: space-around;
-    height: 80%;
-  }
-}
-.wrapper-about .team-about-2 .person-2 {
-  margin: 1%;
-  height: 60%;
-  width: 35%;
-  border: 4px solid #ffdb70;
-  border-radius: 5px;
-  background-color: #fb8570;
-  text-align: center;
-  font-size: 15px;
-  line-height: 20px;
-}
-@media (max-width: 800px) {
-  .wrapper-about .team-about-2 .person-2 {
-    display: flex;
-    flex-direction: column;
-    transform: scale(0.8);
-    text-size: 18px;
-    text-align: justify;
-    align-items: center;
-    line-height: 15px;
-    width: 60%;
-    margin: 0;
-  }
-}
-@media (max-width: 500px) {
-  .wrapper-about .team-about-2 .person-2 {
-    width: 100%;
-    height: 42%;
-  }
+  transform: scale(0.4);
+  justify-self: flex-start;
 }
 footer {
   display: flex;
