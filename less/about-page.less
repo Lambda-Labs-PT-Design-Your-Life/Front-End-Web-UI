@@ -1,13 +1,14 @@
 // Home Content
 .wrapper-about {
-  max-width: 1350px;
+  max-width: 1900px;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  background-color: @main-alt-color;
-  font-family: "Open Sans", sans-serif;
+  background-color: @color-3-alt;
+  font-family: 'Open Sans', sans-serif;
 
   @media @tablet {
     width: 100%;
@@ -22,8 +23,8 @@
   }
 
   .banner-image-about {
-    align-items: space-evenly;
-    justify-items: space-evenly;
+    align-content: space-evenly;
+    // justify-content: space-evenly;
     background-image: url("../img/about-background.jpg");
     background-color: @color-3;
     height: 100%;
@@ -86,8 +87,8 @@
       .person {
         display: flex;
         flex-flow: column nowrap;
-        justify-items: space-evenly;
-        align-items: center;
+        justify-content: center;
+        align-content: center;
         margin: 1%;
         width: 25%;
         border: 4px solid @color-3;
@@ -111,13 +112,16 @@
         }
 
         .img {
-          display: flex;
-          transform: scale(0.4);
-          z-index: auto;
+          display: inline-block;
+          box-sizing: border-box;
+          transform: scale(0.3);
+          // z-index: auto;
           min-width: 120px;
           max-width: 300px;
           min-height: 120px;
           max-height: 300px;
+          margin-bottom: 40%;
+          margin-right: 20%;
 
           @media @tablet {
             margin-left: 30%;
@@ -171,9 +175,9 @@
 
       .person-2 {
         display: flex;
-        flex-flow: column wrap;
-        justify-items: space-evenly;
-        align-items: space-evenly;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
         margin: 1%;
         width: 25%;
         border: 4px solid @color-3;
@@ -197,11 +201,16 @@
         }
 
         .img-2 {
-          display: flex;
+          display: inline-block;
+          box-sizing: border-box;
           transform: scale(0.4);
-          z-index: auto;
-          height: 300px;
-          width: 300px;
+          // z-index: auto;
+          min-width: 150px;
+          max-width: 300px;
+          min-height: 150px;
+          max-height: 300px;
+          margin-bottom: 40%;
+          margin-right: 20%;
 
           @media @tablet {
             margin-left: 30%;

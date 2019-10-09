@@ -93,8 +93,8 @@ video {
 }
 html,
 body {
-  height: 1200px;
-  max-width: 1350px;
+  height: 900px;
+  max-width: 1900px;
   margin: 0 auto;
 }
 @media (max-width: 800px) {
@@ -107,7 +107,7 @@ body {
   html,
   body {
     width: 100%;
-    height: 4000px;
+    height: 2000px;
   }
 }
 /* HTML5 display-role reset for older browsers */
@@ -143,29 +143,32 @@ header {
   display: flex;
   flex-flow: row nowrap;
   background-color: #dcfff8;
-  align-content: center;
+  align-items: center;
   justify-items: flex-end;
-  width: 100%;
-  min-height: 120px;
+  max-width: 1900px;
+  width: 105%;
+  height: 150px;
+  margin: 0 auto;
 }
 @media (max-width: 800px) {
   header {
     flex-flow: column nowrap;
     width: 100%;
     justify-content: center;
+    align-content: flex-end;
   }
 }
 @media (max-width: 500px) {
   header {
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    height: 100%;
+    justify-content: space-evenly;
+    height: 30%;
   }
 }
 header #logo {
   margin-top: 2%;
-  margin-bottom: 1vh;
-  margin-left: 3%;
+  margin-bottom: 4vh;
+  margin-left: 6%;
+  margin-right: 23%;
 }
 @media (max-width: 800px) {
   header #logo {
@@ -177,12 +180,12 @@ header nav {
   margin-left: 10%;
   width: 100%;
   height: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
+  white-space: nowrap;
 }
 @media (max-width: 800px) {
   header nav {
     width: 100%;
-    justify-content: center;
   }
 }
 @media (max-width: 500px) {
@@ -195,8 +198,8 @@ header nav ul {
   color: black;
   height: 100%;
   width: 100%;
-  justify-content: flex-end;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
 }
@@ -210,8 +213,7 @@ header nav ul {
 }
 @media (max-width: 800px) {
   header nav ul {
-    justify-content: space-evenly;
-    align-content: center;
+    justify-items: flex-end;
     width: 100%;
   }
 }
@@ -221,13 +223,20 @@ header nav ul li {
 }
 @media (max-width: 800px) {
   header nav ul li {
-    width: 15%;
+    width: 13%;
+    margin-right: 5%;
   }
 }
 @media (max-width: 500px) {
   header nav ul li {
     width: 100%;
+    margin: 0 auto;
   }
+}
+header nav ul li:hover {
+  border-radius: 3px;
+  background-color: black;
+  color: white;
 }
 header nav ul li a {
   height: 100%;
@@ -261,27 +270,21 @@ header nav ul li a h2 {
     border-bottom: 1px solid black;
   }
 }
-header nav ul li a h2:hover {
-  border-radius: 3px;
-  background-color: black;
-  color: white;
-}
 .wrapper-home {
-  max-width: 1350px;
-  height: 1100px;
+  max-width: 1900px;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  align-content: flex-starts;
+  justify-content: center;
   margin: 0 auto;
-  background-color: #98f7e5;
+  background-color: #ffe8ae;
   font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 800px) {
   .wrapper-home {
-    width: 100%;
-    height: 90%;
+    width: 90%;
+    height: 100%;
     flex-flow: column nowrap;
     justify-items: center;
   }
@@ -289,13 +292,15 @@ header nav ul li a h2:hover {
 @media (max-width: 500px) {
   .wrapper-home {
     justify-items: space-evenly;
-    max-height: 100%;
+    height: 100%;
+    width: 100%;
   }
 }
 .wrapper-home .main-content-home {
-  height: 89%;
+  height: 100%;
+  width: 95%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-items: center;
 }
 @media (max-width: 800px) {
@@ -320,7 +325,7 @@ header nav ul li a h2:hover {
   background-size: 100%, 30%;
   background-image: url("../img/wall-background.png");
   background-color: #ffdb70;
-  height: 100%;
+  height: auto;
   width: 100%;
   display: flex;
   background-repeat: no-repeat;
@@ -349,8 +354,7 @@ header nav ul li a h2:hover {
   border-radius: 6px;
   border: none;
   background-color: black;
-  margin-bottom: 12%;
-  margin-top: 10%;
+  margin-top: 8%;
   width: 170px;
   height: 100px;
   text-align: center;
@@ -363,14 +367,10 @@ header nav ul li a h2:hover {
 }
 @media (max-width: 800px) {
   .wrapper-home .main-content-home .banner-image .button {
-    transform: scale(0.8);
     margin-bottom: 5%;
   }
 }
 @media (max-width: 500px) {
-  .wrapper-home .main-content-home .banner-image .button {
-    transform: scale(0.6);
-  }
 }
 .wrapper-home .main-content-home .banner-image .button span {
   cursor: pointer;
@@ -405,14 +405,18 @@ header nav ul li a h2:hover {
   color: black;
 }
 .wrapper-home .main-content-home .app-btn-home {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  flex: 1 1 auto;
   margin: 1%;
-  max-width: 420px;
-  max-height: 450px;
-  padding: 6%;
+  width: 420px;
+  height: 420px;
+  padding: 2%;
   border: 4px solid #ffdb70;
   border-radius: 5px;
-  background-color: #fb8570;
-  text-align: center;
+  text-align: justify;
   font-size: 1rem;
   line-height: 20px;
   background: rgba(235, 134, 134, 0.495);
@@ -422,11 +426,9 @@ header nav ul li a h2:hover {
     display: flex;
     flex-flow: column nowrap;
     transform: scale(0.8);
-    text-size: 18px;
     text-align: justify;
-    align-items: center;
-    line-height: 15px;
-    padding: 10%;
+    align-content: space-evenly;
+    justify-content: center;
     margin: 0;
   }
 }
@@ -438,10 +440,15 @@ header nav ul li a h2:hover {
   }
 }
 .wrapper-home .main-content-home .team-home {
-  max-width: 420px;
-  max-height: 450px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  flex: 1 1 auto;
+  width: 420px;
+  height: 420px;
   margin: 1%;
-  padding: 6%;
+  padding: 2%;
   border: 4px solid #ffdb70;
   border-radius: 5px;
   background-color: #fb8570;
@@ -456,9 +463,8 @@ header nav ul li a h2:hover {
     flex-flow: column nowrap;
     transform: scale(0.8);
     text-align: justify;
-    align-items: center;
-    line-height: 15px;
-    padding: 10%;
+    align-content: space-evenly;
+    justify-content: center;
     margin: 0;
   }
 }
@@ -470,10 +476,15 @@ header nav ul li a h2:hover {
   }
 }
 .wrapper-home .main-content-home .course-info-home {
-  max-width: 420px;
-  max-height: 450px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  flex: 1 1 auto;
+  width: 420px;
+  height: 420px;
   margin: 1%;
-  padding: 6%;
+  padding: 2%;
   border: 4px solid #ffdb70;
   border-radius: 5px;
   background-color: #fb8570;
@@ -487,9 +498,8 @@ header nav ul li a h2:hover {
     display: flex;
     transform: scale(0.8);
     flex-flow: column nowrap;
-    align-items: center;
-    line-height: 15px;
-    padding: 10%;
+    align-content: space-evenly;
+    justify-content: center;
     margin: 0;
   }
 }
@@ -501,14 +511,15 @@ header nav ul li a h2:hover {
   }
 }
 .wrapper-about {
-  max-width: 1350px;
+  max-width: 1900px;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  background-color: #98f7e5;
-  font-family: "Open Sans", sans-serif;
+  background-color: #ffe8ae;
+  font-family: 'Open Sans', sans-serif;
 }
 @media (max-width: 800px) {
   .wrapper-about {
@@ -525,8 +536,7 @@ header nav ul li a h2:hover {
   }
 }
 .wrapper-about .banner-image-about {
-  align-items: space-evenly;
-  justify-items: space-evenly;
+  align-content: space-evenly;
   background-image: url("../img/about-background.jpg");
   background-color: #ffdb70;
   height: 100%;
@@ -592,8 +602,8 @@ header nav ul li a h2:hover {
 .wrapper-about .banner-image-about .team-about .person {
   display: flex;
   flex-flow: column nowrap;
-  justify-items: space-evenly;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
   margin: 1%;
   width: 25%;
   border: 4px solid #ffdb70;
@@ -615,13 +625,15 @@ header nav ul li a h2:hover {
   height: auto;
 }
 .wrapper-about .banner-image-about .team-about .person .img {
-  display: flex;
-  transform: scale(0.4);
-  z-index: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  transform: scale(0.3);
   min-width: 120px;
   max-width: 300px;
   min-height: 120px;
   max-height: 300px;
+  margin-bottom: 40%;
+  margin-right: 20%;
 }
 @media (max-width: 800px) {
   .wrapper-about .banner-image-about .team-about .person .img {
@@ -677,9 +689,9 @@ header nav ul li a h2:hover {
 }
 .wrapper-about .banner-image-about .team-about-2 .person-2 {
   display: flex;
-  flex-flow: column wrap;
-  justify-items: space-evenly;
-  align-items: space-evenly;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
   margin: 1%;
   width: 25%;
   border: 4px solid #ffdb70;
@@ -701,11 +713,15 @@ header nav ul li a h2:hover {
   height: auto;
 }
 .wrapper-about .banner-image-about .team-about-2 .person-2 .img-2 {
-  display: flex;
+  display: inline-block;
+  box-sizing: border-box;
   transform: scale(0.4);
-  z-index: auto;
-  height: 300px;
-  width: 300px;
+  min-width: 150px;
+  max-width: 300px;
+  min-height: 150px;
+  max-height: 300px;
+  margin-bottom: 40%;
+  margin-right: 20%;
 }
 @media (max-width: 800px) {
   .wrapper-about .banner-image-about .team-about-2 .person-2 .img-2 {
@@ -741,8 +757,9 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  max-width: 1900px;
   width: 100%;
-  height: 200px;
+  height: 180px;
   line-height: 20px;
   background-color: #98f7e5;
 }
