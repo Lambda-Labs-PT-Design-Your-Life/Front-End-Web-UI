@@ -1,7 +1,7 @@
 // Home Content
 .wrapper-about {
 
-  max-width: 1900px;
+  max-width: 1600px;
   width: 80%;
   height: 100%;
   display: flex;
@@ -129,7 +129,7 @@
             margin-left: 30%;
             margin-right: 30%;
             margin-bottom: 10%;
-            height: 200px;
+            height: 180px;
           }
 
           @media @mobile {
@@ -139,12 +139,15 @@
         }
 
         @media @tablet {
+
           width: 40%;
           height: 75%;
           // margin-left: 4%;
         }
 
         @media @mobile {
+          display: flex;
+          flex-flow: colunn wrap;
           height: 35%;
           width: 90%;
           margin-top: 4%;
@@ -228,8 +231,11 @@
         }
 
         @media @tablet {
+         display: flex;
+         flex-flow: column wrap;
+         justify-content: space-around;
           width: 40%;
-          height: 75%;
+          height: 60%;
           margin-right: 2%;
         }
 
